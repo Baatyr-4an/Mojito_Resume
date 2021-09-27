@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+	<title>Mojito</title>
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+	<!-- HEADER -->
+	<header class="header">
+		<div class="container">
+			<div class="header__inner">
+					
+				<h1 class="header__logo">Mojito</h1>
+
+				<a class="header__name">RESUME MAKER</a>
+
+			</div>
+		</div>
+	</header>
+	
+	<h1>
+		{% block content %}
+		{% endblock %}
+	</h1>
+
+	<!-- MAIN -->
+	<div class="main">
+		<div class="container">
+			<div class="main__inner">
+				
+			</div>
+		</div>
+	</div>
+
+	
+	
+
+	<!-- FOOTER -->
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__inner">
+
+				<div class="copyright__text">
+					<div>Copyright © 2021 <a href="https://vk.com/thebaatyr" class="vk">Baatyr</a>. All Rights Reserved</div>
+					<div>Design made by <a href="https://vk.com/seks.vtroem" class="vk">Adilet Humanovich</a></div>
+				</div>
+
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>
