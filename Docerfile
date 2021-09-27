@@ -1,9 +1,0 @@
-FROM python:3.6
-RUN mkdir -p /usr/src/apps/
-WORKDIR /usr/src/apps/
-
-COPY . /usr/src/apps/
-
-CMD ["pytho", "apps.py"]
-
-ENTRYPOINT ["python", "apps.py"]
